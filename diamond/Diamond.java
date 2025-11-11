@@ -13,8 +13,8 @@ public class Diamond {
   int [][] table = new int[number][number];
   
   for (int row = 0; row < table.length; row++) {
-    for (int col = 0; col < table[row].length; col++) {
-      System.out.print(row + "; " + col);
+    for (int col = 0; col < (table[row].length - 1); col++) {
+      System.out.print((row) + ", " + (col) +" : ");
       } 
     
       System.out.println();
