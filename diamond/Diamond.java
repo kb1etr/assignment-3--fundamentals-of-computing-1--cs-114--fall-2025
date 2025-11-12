@@ -1,4 +1,4 @@
-import java.util.Scanner;
+ import java.util.Scanner;
 
 public class Diamond {
   public static void main(String[] args) {
@@ -12,7 +12,7 @@ public class Diamond {
 
   int [][] table = new int[number][number];
   
-  for (int row = 0; row < table.length; row++) {
+  for (int row = 0; row < table.length; row 223++) {
     for (int col = 0; col < (table[row].length - 1); col++) {
       System.out.print((row) + ", " + (col) +" : ");
       } 
