@@ -18,8 +18,9 @@ public class Diamond {
 
       // Update variables for spaces and asterisks
       for (int row = 1; row <= inNumber; row++) {
-        for (int space = inNumber - row; space >= 1; space--) {
-          System.out.print(" ");
+        for (int space = (inNumber / row); space > 1; space--) {
+          System.out.print("|");
+        
         }
 
         for (int ast = 1; ast <= row; ast++) {
