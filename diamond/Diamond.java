@@ -1,37 +1,28 @@
 import java.util.Scanner;
 
 public class Diamond {
-  public static void main(String[] args) {
-  
+public static void main(String[] args) {
+
   Scanner keyInput = new Scanner(System.in);
 
-  int number = 0;
+ int number = 0;
 
-  System.out.print("Enter a number: ");
-  number = keyInput.nextInt();
+ boolean workingOnTopHalf = true;
 
-  int [][] table = new int[number][number];
-  
-table [0][1] =1 ;table [1][0] = 1; table [1][1] = 1; table [1][2] = 1; table  [2][1] =1;
+ System.out.print("Enter a number: ");
+ number = keyInput.nextInt();
 
-
-
-
-  for (int row = 0; row < table.length; row++) {
-    for (int col = 0; col < (table[row].length); col++) {
-      // System.out.print((table[row][col])+" : ");
-      if ((table[row][col])== 1) {
+    for (int row = 1; row <= number; row++) {
+      for (int space = number - row; space >= 1; space--) {
+        System.out.print(" |");
+      }
+      for (int ast = 1; ast <= row; ast++) {
         System.out.print("*");
-
-      }
-      else {
-        System.out.print(" ");
-      
       }
 
-      } 
-    
       System.out.println();
+
+
     
     }
 
