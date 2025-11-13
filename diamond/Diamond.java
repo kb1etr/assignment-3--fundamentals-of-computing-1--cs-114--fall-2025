@@ -4,17 +4,22 @@ public class Diamond {
   public static void main(String[] args) {
     Scanner keyInput = new Scanner(System.in);
 
-    int number = 0;
+    int inNumber = 0;
 
     boolean workingOnTopHalf = true;
 
     try {
       System.out.print("Enter a number: ");
-      number = keyInput.nextInt();
+      inNumber = keyInput.nextInt();
 
-      for (int row = 1; row <= number; row++) {
-        for (int space = number - row; space >= 1; space--) {
-          System.out.print(" |");
+      if (inNumber % 2 == 0) {  // Check if input is odd or even
+        System.out.print("even");
+      } else {
+
+      // Update variables for spaces and asterisks
+      for (int row = 1; row <= inNumber; row++) {
+        for (int space = inNumber - row; space >= 1; space--) {
+          System.out.print(" ");
         }
 
         for (int ast = 1; ast <= row; ast++) {
@@ -22,8 +27,11 @@ public class Diamond {
         }
 
         System.out.println();
+
       }
-      } catch (Exception e) {
+    }
+
+    } catch (Exception e) {
         System.out.println("Invalid input. Please enter an integer.");
 
         return;
