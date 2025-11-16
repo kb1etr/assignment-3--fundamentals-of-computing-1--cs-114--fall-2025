@@ -8,7 +8,7 @@ public class Diamond {
 
     int ast;
 
-    int i=0;
+    int i;
 
     int row;
 
