@@ -6,10 +6,6 @@ public class Diamond {
 
     int inNumber;
 
-    // int ast;
-
-    int i;
-
     int row;
 
     int spacelength;
@@ -41,7 +37,8 @@ public class Diamond {
           if (row == 0  || row == inNumber) {  // prints a single asterisk on the first and last row
             System.out.print("* ");
           } 
-          else if (row <= inNumber/2){                                                                                                   
+          else if (row <= inNumber/2){
+
             for (int ast = 1; ast <= row*2; ast++ ){
 
               System.out.print("* ");
@@ -64,29 +61,29 @@ public class Diamond {
 
           if (row == 0  || row == inNumber) {  // prints a single asterisk on the first and last row
             System.out.print("* ");
-          } 
+          }
           else if (row <= inNumber/2){  
 
-           for (int ast = 1; ast <= row*2; ast++ ){
+          for (int ast = 1; ast <= row*2; ast++ ){
 
             System.out.print("* ");
 
-            }
           }
-          System.out.println();       
+          }
+          System.out.println();
         }
 
       } 
-      else {  //odd
+      else { //odd
     // Update variables for spaces and asterisks
       System.out.println("odd"); 
 
     for (row = 1; row <= inNumber; row++) {
         for (int space = (inNumber / row); space > 1; space--) {
-          System.out.print(" ");
+         System.out.print(" ");
         }
-        for (ast = 1; ast <= row; ast++) {
-          System.out.print("*"); 
+        for (int ast = 1; ast <= row; ast++) {
+         System.out.print("*");
         }
         System.out.println();
       }
