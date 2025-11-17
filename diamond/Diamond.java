@@ -2,15 +2,15 @@ import java.util.Scanner;
 
 public class Diamond {
   public static void main(String[] args) {
+
     Scanner keyInput = new Scanner(System.in); 
 
-    int inNumber; int ast;
-    int row;
-    int spacelength;
-     
+    int inNumber; int ast; int row; int spacelength;
+
     try { 
       System.out.print("Enter a number: "); 
       inNumber = keyInput.nextInt(); 
+
       row = inNumber;
 
       if (inNumber % 2 == 0) {  // Check if input is odd or even 
@@ -53,7 +53,8 @@ public class Diamond {
           }
           System.out.println(); 
         }
-      } 
+      }
+
     else {  //for an odd number input
       for (row = 0; row <= (inNumber-1)/2; row++){ //for first half of matrix
           if (row == 0) spacelength = (inNumber-1)/2;
