@@ -22,7 +22,7 @@ public class Diamond {
           System.out.print(" ");
           }
 
-          if (row == 0  || row == inNumber) {  // Special case: prints a single asterisk on the first and last row
+          if (row == 0) {  // Special case: prints a single asterisk on the first and last row
             System.out.print("* ");
           } 
           else if (row <= inNumber/2){
@@ -42,7 +42,7 @@ public class Diamond {
           System.out.print(" ");
           }
 
-          if (row == 0  || row == inNumber) {  // Special case: prints a single asterisk on the first and last row
+          if (row == 0) {  // Special case: prints a single asterisk on the first and last row
             System.out.print("* ");
           } 
           else if (row <= inNumber/2){
@@ -63,7 +63,7 @@ public class Diamond {
           System.out.print(" ");
           }
 
-          if (row == 0  || row == inNumber) {  // prints a single asterisk on the first and last row
+          if (row == 0) {  // prints a single asterisk on the first and last row
            System.out.print("*");
           }
           else if (row <= inNumber/2){
