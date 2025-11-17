@@ -5,7 +5,7 @@ public class Diamond {
 
     Scanner keyInput = new Scanner(System.in); 
 
-    int inNumber; int ast; int row; int spacelength;
+    int inNumber; int ast; int row; int spaceLength;
 
     try { 
       System.out.print("Enter a number: "); 
@@ -16,9 +16,9 @@ public class Diamond {
       if (inNumber % 2 == 0) {  // Check if input is odd or even 
 
         for (row = 0; row <= inNumber/2; row++){ //for first half of matrix
-          if (row == 0) spacelength = inNumber-1;
-          else spacelength = (inNumber/2 - row)*2; 
-          for (int space = 1; space <= spacelength; space++){
+          if (row == 0) spaceLength = inNumber-1;
+          else spaceLength = (inNumber/2 - row)*2; 
+          for (int space = 1; space <= spaceLength; space++){
           System.out.print(" ");
           }
 
@@ -36,9 +36,9 @@ public class Diamond {
         }
 
         for (row = inNumber/2 -1; row >= 0; row--){ //for bottom half of the diamond
-          if (row == 0) spacelength = inNumber-1;
-          else spacelength = (inNumber/2 - row)*2; 
-          for (int space = 1; space <= spacelength; space++){
+          if (row == 0) spaceLength = inNumber-1;
+          else spaceLength = (inNumber/2 - row)*2; 
+          for (int space = 1; space <= spaceLength; space++){
           System.out.print(" ");
           }
 
@@ -57,9 +57,9 @@ public class Diamond {
 
     else {  //for an odd number input
       for (row = 0; row <= (inNumber-1)/2; row++){ //for first half of matrix
-          if (row == 0) spacelength = (inNumber-1)/2;
-          else spacelength = ((inNumber-1)/2 - row); 
-          for (int space = 1; space <= spacelength; space++){ // Print number of leading spaces
+          if (row == 0) spaceLength = (inNumber-1)/2;
+          else spaceLength = ((inNumber-1)/2 - row); 
+          for (int space = 1; space <= spaceLength; space++){ // Print number of leading spaces
           System.out.print(" ");
           }
 
@@ -76,9 +76,9 @@ public class Diamond {
         }
 
       for (row = ((inNumber-1)/2) -1; row >= 0; row--){ //for first half of matrix
-          if (row == 0) spacelength = (inNumber-1)/2;
-          else spacelength = ((inNumber-1)/2 - row); 
-          for (int space = 1; space <= spacelength; space++){ // Print number of leading spaces
+          if (row == 0) spaceLength = (inNumber-1)/2;
+          else spaceLength = ((inNumber-1)/2 - row); 
+          for (int space = 1; space <= spaceLength; space++){ // Print number of leading spaces
           System.out.print(" ");
           }
 
