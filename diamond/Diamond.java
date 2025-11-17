@@ -4,9 +4,7 @@ public class Diamond {
   public static void main(String[] args) {
     Scanner keyInput = new Scanner(System.in); 
 
-   // Variable declarations
-    int inNumber = 0; 
-    int ast;
+    int inNumber; int ast;
     int row;
     int spacelength;
      
@@ -23,15 +21,15 @@ public class Diamond {
           for (int space = 1; space <= spacelength; space++){
           System.out.print(" ");
           }
-          
+
           if (row == 0  || row == inNumber) {  // Special case: prints a single asterisk on the first and last row
             System.out.print("* ");
           } 
           else if (row <= inNumber/2){
             for (ast = 1; ast <= row*2; ast++ ){
-            
+
               System.out.print("* ");
-              
+
             }
           }
           System.out.println();
@@ -43,13 +41,13 @@ public class Diamond {
           for (int space = 1; space <= spacelength; space++){
           System.out.print(" ");
           }
-          
+
           if (row == 0  || row == inNumber) {  // Special case: prints a single asterisk on the first and last row
             System.out.print("* ");
           } 
           else if (row <= inNumber/2){
             for (ast = 1; ast <= row*2; ast++ ){
-            
+
               System.out.print("* ");
             }
           }
@@ -81,8 +79,8 @@ public class Diamond {
           else spacelength = ((inNumber-1)/2 - row); 
           for (int space = 1; space <= spacelength; space++){ // Print number of leading spaces
           System.out.print(" ");
-          }               
-          
+          }
+
           if (row == 0  || row == inNumber) {  // special case: prints a single asterisk on the first and last row
             System.out.print("*");
           } 
@@ -96,9 +94,9 @@ public class Diamond {
           System.out.println();
         }
     }
-    
+
   } catch (Exception e) {
-     
+
     System.out.println("Invalid input. Please enter an integer.");
     return;
   }
