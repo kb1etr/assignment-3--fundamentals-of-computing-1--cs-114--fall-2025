@@ -11,6 +11,7 @@
 
 Also, ensure VS Code’s settings includes the following
 
+
 ```json
   "files.eol": "\n",
   "files.insertFinalNewline": true,
