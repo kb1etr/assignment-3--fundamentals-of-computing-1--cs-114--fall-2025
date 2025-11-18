@@ -27,7 +27,6 @@ public class Diamond {
           } 
           else if (row <= inNumber/2){
             for (ast = 1; ast <= row*2; ast++ ){
-
               System.out.print("* ");
 
             }
@@ -47,7 +46,6 @@ public class Diamond {
           } 
           else if (row <= inNumber/2){
             for (ast = 1; ast <= row*2; ast++ ){
-
               System.out.print("* ");
             }
           }
@@ -68,7 +66,6 @@ public class Diamond {
           }
           else if (row <= inNumber/2){
            for (ast = 1; ast <= row*2+1; ast++ ){
-
             System.out.print("*");
             }
           }
