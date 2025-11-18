@@ -84,9 +84,7 @@ public class Diamond {
           } 
           else if (row <= inNumber){
             for (ast = 1; ast <= row*2+1; ast++ ){
-
-              System.out.print("*");
-
+             System.out.print("*");
             }
           }
           System.out.println();
