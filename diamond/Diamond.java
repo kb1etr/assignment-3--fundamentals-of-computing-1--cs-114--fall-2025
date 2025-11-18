@@ -13,7 +13,7 @@ public class Diamond {
 
       row = inNumber;
 
-      if (inNumber % 2 == 0) {  // Check if input is odd or even 
+      if (inNumber % 2 == 0) {  // Check if input is odd or even - EVEN CASE
 
         for (row = 0; row <= inNumber/2; row++){ //for first half of matrix
           if (row == 0) spaceLength = inNumber-1;
@@ -55,7 +55,7 @@ public class Diamond {
         }
       }
 
-    else {  //for an odd number input
+    else {  //for an odd number input - ODD CASE
       for (row = 0; row <= (inNumber-1)/2; row++){ //for first half of matrix
           if (row == 0) spaceLength = (inNumber-1)/2;
           else spaceLength = ((inNumber-1)/2 - row); 
