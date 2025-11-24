@@ -43,10 +43,10 @@ public class Matrix {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (i+j == size-1){
-                  System.out.print((char)27 + "[33m"); // Set color to yellow for diagonals  
+                  System.out.print((char)27 + "[33m"); // Set color to yellow for diagonals
                 }
                 else {
-                  System.out.print((char)27 + "[0m");    // reset color to default   
+                  System.out.print((char)27 + "[0m");    // reset color to default
                 }
             	
                 System.out.print(data[i][j] + "\t"); // Print element and a tab for spacing
