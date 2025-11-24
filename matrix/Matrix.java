@@ -1,11 +1,4 @@
 
-
-// public class Matrix {
-
-  //package MatrixPackage;  // Make package with class Matrix routines
-
-  //import java.util.Scanner; // Required for user input
-
 public class Matrix {
     private int[][] data; // The 2D array to store matrix elements
     private int[][] data1; // The 2D array to store backup matrix elements

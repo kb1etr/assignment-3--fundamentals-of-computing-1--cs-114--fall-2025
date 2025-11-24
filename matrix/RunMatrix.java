@@ -26,7 +26,7 @@ public class RunMatrix {
         }
 
         System.out.println("\nPrinting matrix with default values:");// Print out the '0' filled matrix
-        myMatrix.printMatrix();
+        myMatrix.printMatrix(); 
         System.out.println();
   
         myMatrix.populateMatrix();
