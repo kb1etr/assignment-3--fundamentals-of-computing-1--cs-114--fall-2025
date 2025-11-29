@@ -1,4 +1,4 @@
-// import MatrixPackage.Matrix;
+
 import java.util.Scanner;
 
 public class RunMatrix {
@@ -23,7 +23,9 @@ public class RunMatrix {
         System.out.println();
   
         myMatrix.populateMatrix();
+
     System.out.println("\nPrinting matrix:");
+
         myMatrix.printMatrix();
 
      // Swap incrementing pattern leaving the center diagnal unchanged

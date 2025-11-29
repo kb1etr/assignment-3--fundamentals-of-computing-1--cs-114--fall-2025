@@ -48,7 +48,7 @@ public class Matrix {
                 else {
                   System.out.print((char)27 + "[0m");    // reset color to default
                 }
-            	
+
                 System.out.print(data[i][j] + "\t"); // Print element and a tab for spacing
             }
             System.out.println(); // New line after each row
@@ -80,9 +80,9 @@ public class Matrix {
     }
 
     public void flipMatrix(){  	// Flips matrix, keeps diagnals untouched
-    	
+
     	System.out.print("\nFlipping matrix");
-    	
+
     	// Save data in another matrix to prevent overwriting data of same matrix
     	for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {  // copy matrix to new array
@@ -118,5 +118,3 @@ public class Matrix {
         System.out.println("matrix populated");
     }
 }
-
-// }
