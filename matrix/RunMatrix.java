@@ -34,7 +34,7 @@ public class RunMatrix {
         System.out.println("Printing flipped matrix:");
         myMatrix.printMatrix();
 
-        scanner.close(); // Close the scanner to release resources
+        scanner.close();
     
   }
 }
