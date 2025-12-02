@@ -30,7 +30,10 @@ public class RunMatrix {
 
      // Swap incrementing pattern leaving the center diagnal unchanged
         myMatrix.flipMatrix();
+        System.out.println();
+        System.out.println("Printing flipped matrix:");
         myMatrix.printMatrix();
+
         scanner.close(); // Close the scanner to release resources
     
   }

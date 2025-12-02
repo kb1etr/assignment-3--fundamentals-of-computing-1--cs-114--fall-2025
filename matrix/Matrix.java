@@ -6,7 +6,7 @@ public class Matrix {
     private int cols;
     public static int size;
 
-    // Constructor to initialize the matrix with given dimensions
+    // Constructor to initialize the matrix with given dim
     public Matrix(int size) {
         if (size <= 0) {
             throw new IllegalArgumentException("Matrix dimensions must be positive.");
@@ -48,7 +48,6 @@ public class Matrix {
                 else {
                   System.out.print((char)27 + "[0m");    // reset color to default
                 }
-
                 System.out.print(data[i][j] + "\t"); // Print element and a tab for spacing
             }
             System.out.println(); // New line after each row
@@ -81,7 +80,7 @@ public class Matrix {
 
     public void flipMatrix(){  	// Flips matrix, keeps diagnals untouched
 
-    	System.out.print("\nFlipping matrix");
+        System.out.print("\nFlipping matrix...");
 
     	// Save data in another matrix to prevent overwriting data of same matrix
     	for (int i = 0; i < rows; i++) {
@@ -96,9 +95,8 @@ public class Matrix {
             		data[size-1-i][size-1-j] = temp;            		
             	}
             }
-            System.out.print(".");
-    	}
-    	System.out.println("Matrix flipped");
+        }
+        System.out.println("matrix flipped");
     }
 
     public void populateMatrix(){
@@ -106,10 +104,9 @@ public class Matrix {
 
 		int k = 1;
 
-		System.out.print("\nPopulating matrix");
+		System.out.print("\nPopulating matrix...");
 
         for (int i = 0; i < rows; i++) {
-            System.out.print(".");
             for (int j = 0; j < cols; j++) {               
                 setElement(i, j, k);
                 k++;
