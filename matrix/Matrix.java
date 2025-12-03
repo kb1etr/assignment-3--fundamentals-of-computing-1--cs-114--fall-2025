@@ -85,14 +85,14 @@ public class Matrix {
     	// Save data in another matrix to prevent overwriting data of same matrix
     	for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {  // copy matrix to new array
-            	data1[i][j] = data[i][j];             	
+            	data1[i][j] = data[i][j];
             }
     	}
     	for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) { //flip triangles and copy back to original array
             	if (i+j != size-1){          // diagnols are untouched
             		int temp = data1[i][j];
-            		data[size-1-i][size-1-j] = temp;            		
+            		data[size-1-i][size-1-j] = temp;
             	}
             }
         }
