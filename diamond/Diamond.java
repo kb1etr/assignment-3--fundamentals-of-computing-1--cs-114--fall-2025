@@ -94,6 +94,7 @@ public class Diamond {
   } catch (Exception e) {
 
     System.out.println("Invalid input. Please enter an integer.");
+    keyInput.close();
     return;
   }
     keyInput.close();
