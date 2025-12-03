@@ -20,7 +20,6 @@ public class RunMatrix {
 
         System.out.println("\nPrinting matrix with default values:");// Print out the '0' filled matrix
         myMatrix.printMatrix();
-        System.out.println();
   
         myMatrix.populateMatrix();
 
@@ -33,6 +32,7 @@ public class RunMatrix {
         System.out.println();
         System.out.println("Printing flipped matrix:");
         myMatrix.printMatrix();
+        System.out.println();
 
   scanner.close();
 

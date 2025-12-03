@@ -17,7 +17,7 @@ public class Matrix {
         this.data1 = new int[rows][cols];
         System.out.print("\n\nDimension of the matrix is: ");
         System.out.print(size);
-        System.out.print("x");
+        System.out.print(" x ");
         System.out.println(size);
     }
 
@@ -39,16 +39,16 @@ public class Matrix {
 
     // Method to print the matrix
     public void printMatrix() {
-        
+        System.out.println();
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 if (i+j == size-1){
-                  System.out.print((char)27 + "[33m"); // Set color to yellow for diagonals
+                  System.out.print("\t"+(char)27 + "[33m"); // Set color to yellow for diagonals
                 }
                 else {
-                  System.out.print((char)27 + "[0m");    // reset color to default
+                  System.out.print("\t"+(char)27 + "[0m");    // reset color to default
                 }
-                System.out.print(data[i][j] + "\t"); // Print element and a tab for spacing
+                System.out.print(data[i][j]); // Print element 
             }
             System.out.println(); // New line after each row
         }
