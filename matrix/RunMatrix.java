@@ -17,7 +17,6 @@ public class RunMatrix {
 
         int numRows = myMatrix.size;  // set rows and columns == size for a square matrix
         int numCols = myMatrix.size;
-
         System.out.println("\nPrinting matrix with default values:");// Print out the '0' filled matrix
         myMatrix.printMatrix();
   
@@ -30,8 +29,10 @@ public class RunMatrix {
      // Swap incrementing pattern leaving the center diagnal unchanged
         myMatrix.flipMatrix();
         System.out.println();
+
         System.out.println("Printing flipped matrix:");
         myMatrix.printMatrix();
+
         System.out.println();
 
   scanner.close();

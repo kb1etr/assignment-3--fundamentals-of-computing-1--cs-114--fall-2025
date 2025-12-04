@@ -22,7 +22,7 @@ public class Matrix {
     }
 
     // Method to get a specific element from the matrix
-    public int getElement(int row, int col) {
+    private int getElement(int row, int col) {
         if (row < 0 || row >= rows || col < 0 || col >= cols) {
             throw new IndexOutOfBoundsException("Invalid matrix coordinates.");
         }
@@ -30,7 +30,7 @@ public class Matrix {
     }
 
     // Method to set a specific element in the matrix
-    public void setElement(int row, int col, int value) {
+    private void setElement(int row, int col, int value) {
         if (row < 0 || row >= rows || col < 0 || col >= cols) {
             throw new IndexOutOfBoundsException("Invalid matrix coordinates.");
         }
@@ -54,7 +54,7 @@ public class Matrix {
         }
     }
 
-    public static void swap(int[][] matrix, int x1, int x2, int y1, int y2) {
+    private static void swap(int[][] matrix, int x1, int x2, int y1, int y2) {
     // Check for valid row indices
         if (x1 < 0 || x1 >= matrix.length || x2 < 0 || x2 >= matrix.length) {
         System.out.println("Invalid row indices.");
